@@ -1,0 +1,177 @@
+/* Basic styling for the game container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width:900px;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.game-cell {
+    width: 100px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: red;
+    cursor: pointer;
+    border: 28px solid #ccc;
+    transition: background-color 0.2s ease;
+}
+
+.game-cell:hover {
+    background-color: #ccc;
+}
+
+.restart-btn {
+    padding: 20px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.restart-btn:hover {
+    background-color: #45a049;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+@media (max-width: 500px) {
+    .game-board {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .game-cell {
+        font-size: 1.5rem;
+    }
+}
+/* Gradient Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Linear gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: black;
+}
+
+/* Game container styles */
+.game-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    display: block;
+}
+
+h1 {
+    font-size: 2rem;
+    color: black;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.game-cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #e2e2;
+    cursor: pointer;
+    border: 10px solid #ccc;
+    transition: background-color 0.2s ease;
+}
+
+.game-cell:hover {
+    background-color: yellow;
+}
+
+.restart-btn, .new-game-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: blue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.restart-btn:hover, .new-game-btn:hover {
+    background-color: #45a049;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+/* End screen styles */
+.game-end {
+    display: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100px;
+    max-width: 400px;
+}
+
+@media (max-width: 500px) {
+    .game-board {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .game-cell {
+        font-size: 1.5rem;
+    }
+}
